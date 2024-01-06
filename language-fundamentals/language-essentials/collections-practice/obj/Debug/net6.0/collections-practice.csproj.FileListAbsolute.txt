@@ -1,0 +1,15 @@
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\bin\Debug\net6.0\collections-practice.exe
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\bin\Debug\net6.0\collections-practice.deps.json
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\bin\Debug\net6.0\collections-practice.runtimeconfig.json
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\bin\Debug\net6.0\collections-practice.dll
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\bin\Debug\net6.0\collections-practice.pdb
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\obj\Debug\net6.0\collections-practice.csproj.AssemblyReference.cache
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\obj\Debug\net6.0\collections-practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\obj\Debug\net6.0\collections-practice.AssemblyInfoInputs.cache
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\obj\Debug\net6.0\collections-practice.AssemblyInfo.cs
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\obj\Debug\net6.0\collections-practice.csproj.CoreCompileInputs.cache
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\obj\Debug\net6.0\collections-practice.dll
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\obj\Debug\net6.0\refint\collections-practice.dll
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\obj\Debug\net6.0\collections-practice.pdb
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\obj\Debug\net6.0\collections-practice.genruntimeconfig.cache
+C:\Users\touat\Documents\DEV\Coding Dojo\full-stack-csharp\language-fundamentals\language-essentials\collections-practice\obj\Debug\net6.0\ref\collections-practice.dll

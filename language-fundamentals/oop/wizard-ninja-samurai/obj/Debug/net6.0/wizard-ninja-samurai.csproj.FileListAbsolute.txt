@@ -1,0 +1,15 @@
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\obj\Debug\net6.0\wizard-ninja-samurai.csproj.AssemblyReference.cache
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\obj\Debug\net6.0\wizard-ninja-samurai.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\obj\Debug\net6.0\wizard-ninja-samurai.AssemblyInfoInputs.cache
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\obj\Debug\net6.0\wizard-ninja-samurai.AssemblyInfo.cs
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\obj\Debug\net6.0\wizard-ninja-samurai.csproj.CoreCompileInputs.cache
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\bin\Debug\net6.0\wizard-ninja-samurai.exe
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\bin\Debug\net6.0\wizard-ninja-samurai.deps.json
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\bin\Debug\net6.0\wizard-ninja-samurai.runtimeconfig.json
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\bin\Debug\net6.0\wizard-ninja-samurai.dll
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\bin\Debug\net6.0\wizard-ninja-samurai.pdb
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\obj\Debug\net6.0\wizard-ninja-samurai.dll
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\obj\Debug\net6.0\refint\wizard-ninja-samurai.dll
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\obj\Debug\net6.0\wizard-ninja-samurai.pdb
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\obj\Debug\net6.0\wizard-ninja-samurai.genruntimeconfig.cache
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\language-fundamentals\oop\wizard-ninja-samurai\obj\Debug\net6.0\ref\wizard-ninja-samurai.dll

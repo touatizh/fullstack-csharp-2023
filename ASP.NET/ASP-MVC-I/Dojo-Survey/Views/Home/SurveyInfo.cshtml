@@ -1,3 +1,4 @@
+@model DojoSurvey.Models.SurveyForm 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,19 +15,19 @@
             </div>
             <div class="d-flex align-items-center">
                 <p class="col-5">Name</p>
-                <p class="col-5">@ViewBag.Context["name"]</p>
+                <p class="col-5">@Model.name</p>
             </div>
             <div class="d-flex align-items-center">
                 <p class="col-5">Dojo Location</p>
-                <p class="col-5">@ViewBag.Context["location"]</p>
+                <p class="col-5">@Model.location</p>
             </div>
             <div class="d-flex align-items-center">
                 <p class="col-5">Favourite Language</p>
-                <p class="col-5">@ViewBag.Context["language"]</p>
+                <p class="col-5">@Model.language</p>
             </div>
             <div class="d-flex align-items-center">
                 <p class="col-5">Comments</p>
-                <p class="col-5">@ViewBag.Context["comments"]</p>
+                <p class="col-5">@Model.comments</p>
             </div>
         
         </div>

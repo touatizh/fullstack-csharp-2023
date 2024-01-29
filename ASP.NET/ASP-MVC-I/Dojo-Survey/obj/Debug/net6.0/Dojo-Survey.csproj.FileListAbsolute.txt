@@ -21,3 +21,4 @@ C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\ASP.NET\ASP-MVC-I
 C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\ASP.NET\ASP-MVC-I\Dojo-Survey\obj\Debug\net6.0\ref\Dojo-Survey.dll
 C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\ASP.NET\ASP-MVC-I\Dojo-Survey\obj\Debug\net6.0\Dojo-Survey.RazorAssemblyInfo.cache
 C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\ASP.NET\ASP-MVC-I\Dojo-Survey\obj\Debug\net6.0\Dojo-Survey.RazorAssemblyInfo.cs
+C:\Users\touat\Documents\DEV\Coding Dojo\fullstack-csharp-2023\ASP.NET\ASP-MVC-I\Dojo-Survey\bin\Debug\net6.0\Dojo-Survey.staticwebassets.runtime.json

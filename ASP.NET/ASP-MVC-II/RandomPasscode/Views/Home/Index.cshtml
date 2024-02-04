@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "A web page";
+}
+@using Microsoft.AspNetCore.Http;
+
+<div class="container d-flex flex-column align-items-center justify-content-center gap-3 text-center h-100 w-50">
+    <h1>Random Passcode #@Context.Session.GetInt32("passCount")</h1>
+    <form asp-action="GeneratePasscode" asp-controller="Home" class="d-flex flex-column gap-2">
+        <input class="form-control text-center" type="text" value="@Context.Session.GetString("passcode")" readonly>
+        <div class="d-flex justify-content-around">
+            <button class=" btn btn-primary">Generate</button>
+            <button class=" btn btn-danger" asp-action="Reset" asp-controller="Home">Reset</button>
+        </div>
+    </form>
+</div>

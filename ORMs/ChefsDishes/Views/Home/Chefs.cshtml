@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Chef
+
+<div class="container d-flex flex-column align-items-center gap-5 mt-5">
+    <h1 class="text-center">Checkout our roster of chefs</h1>
+    <table class="table table-striped w-75">
+        <thead class="bg-dark text-light">
+            <tr>
+                <th class="text-center">Name</th>
+                <th class="text-center">Age</th>
+                <th class="text-center"># of Dishes</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                if (ViewBag.AllChefs.Count == 0)
+                {
+                    <td class="px-3">No Records Found.</td>
+                    <td></td>
+                    <td></td>
+                }
+                else
+                {
+                    foreach (Chef c in ViewBag.AllChefs)
+                    {
+                        int Age = DateTime.Now.Year - c.DateOfBirth.Year;
+                        <tr>
+                            <td class="text-center">@c.FirstName @c.LastName</td>
+                            <td class="text-center">@Age</td>
+                            <td class="text-center">@c.CreatedDishes.Count</td>
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+    </table>
+</div>

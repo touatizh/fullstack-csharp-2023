@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Dish
+
+<div class="container d-flex flex-column align-items-center gap-5 mt-5">
+    <h1 class="text-center">Yum! Checkout our tasty dishes!</h1>
+    <table class="table table-striped w-75">
+        <thead class="bg-dark text-light">
+            <tr>
+                <th class="text-center">Name</th>
+                <th class="text-center">Chef</th>
+                <th class="text-center">Tastiness</th>
+                <th class="text-center">Calories</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                if (ViewBag.AllDishes.Count == 0)
+                {
+                    <td class="px-3">No Records Found.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                }
+                else
+                {
+                    foreach (Dish d in ViewBag.AllDishes)
+                    {
+                        <tr>
+                            <td class="text-center">@d.Name</td>
+                            <td class="text-center">@d.Chef?.FirstName @d.Chef?.LastName</td>
+                            <td class="text-center">@d.Tastiness</td>
+                            <td class="text-center">@d.Calories</td>
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+    </table>
+</div>

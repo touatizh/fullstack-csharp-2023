@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Categories";
+}
+@model Category
+<div class="container">
+    <div class="row mt-5">
+        <div class="col">
+        <h2 class="text-center mb-5">New Category</h2>
+            <form asp-action="AddCategory">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <label class="form-label col-2">Name:</label>
+                    <input asp-for="Name" class="form-control offset-2">
+                </div>
+                <button class="btn btn-primary">Create</button>
+            </form>
+        </div>
+        <div class="col">
+            <h2 class="text-center mb-4">All Categories</h2>
+            <div class="d-flex flex-column">
+            @if(ViewBag.Categories.Count > 0 )
+                @foreach (Category category in ViewBag.Categories)
+                {
+                    <a href="/categories/@category.ID" class="mt-2">@category.Name</a>
+                }
+            else
+            {
+                <p>No Categories</p>
+            }
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

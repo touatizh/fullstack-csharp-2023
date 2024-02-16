@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Product
+<div class="container">
+    <div class="row gap-5 mt-5">
+        <div class="col">
+            <h2 class="text-center mb-5">New Product</h2>
+            <form asp-action="AddProduct">
+                <div class="d-flex align-items-center justify-content-between">
+                    <label asp-for="Name" class="form-label col-2">Name:</label>
+                    <input asp-for="Name" class="form-control offset-2">
+                </div>
+                <span asp-validation-for="Name" class="offset-4 text-danger"></span>
+
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    <label asp-for="Description" class="form-label col-2">Description:</label>
+                    <input asp-for="Description" class="form-control offset-2">
+                </div>
+                <span asp-validation-for="Description" class="offset-4 text-danger mb-3"></span>
+
+                <div class="d-flex align-items-center justify-content-between mt-3">
+                    <label asp-for="Price" class="form-label col-2">Price:</label>
+                    <input asp-for="Price" type="number" step="0.01" class="form-control offset-2">
+                </div>
+                <span asp-validation-for="Price" class="offset-4 text-danger mb-3"></span>
+                <div>
+                    <button class="btn btn-primary mt-3">Create</button>
+                </div>
+            </form>
+        </div>
+        <div class="col">
+            <h2 class="text-center mb-4">All Products</h2>
+            <div class="d-flex flex-column">
+            @if(ViewBag.Products.Count > 0 )
+                @foreach (Product product in ViewBag.Products)
+                {
+                    <a href="/products/@product.ID" class="mt-2">@product.Name</a>
+                }
+            else
+            {
+                <p>No Products</p>
+            }
+            </div>
+        </div>
+    </div>
+</div>

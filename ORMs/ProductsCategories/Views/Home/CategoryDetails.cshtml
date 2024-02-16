@@ -1,0 +1,33 @@
+﻿@model Category
+
+@{
+    ViewData["Title"] = "Home Page";
+    ViewBag.CategoryId = Model.ID;
+}
+
+
+<div class="container">
+    <div class="row">
+        <h2 class="text-center mb-5">@Model.Name</h2>
+    <div class="col">
+        <h2 class="text-center mb-4">Products</h2>
+        <div class="d-flex flex-column">
+            @if(Model.Products.Count > 0)
+            {
+                @foreach (var assoc in Model.Products)
+                {
+                    <p>@assoc.Product.Name</p>
+                }
+            }
+            else
+            {
+                <p>No Products</p>
+            }
+        </div>
+    </div>
+    <div class="col">
+        <h2 class="text-center mb-4">Add Product</h2>
+        <partial name="CatProdPartial"model="new Association()"/>
+    </div>
+    </div>
+</div>

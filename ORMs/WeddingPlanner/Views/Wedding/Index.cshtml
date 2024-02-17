@@ -1,0 +1,52 @@
+﻿@model List<Wedding>
+
+<partial name="_Navbar" />
+
+<table class="table table-striped">
+    <thead class="text-center table-dark">
+        <th>Wedding of</th>
+        <th>Date</th>
+        <th>Guest Count</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        @{
+            foreach(var w in Model)
+            {
+                <tr class="text-center">
+                    <td><a class="text-dark text-decoration-none" href="/weddings/@w.ID">@w.WedderOne & @w.WedderTwo</a></td>
+                    <td>@w.Date.ToString("MMM d, yyyy")</td>
+                    <td>@w.Guests.Count</td>
+                    <td class="w-25">
+                        <div class="d-flex align-items-center justify-content-evenly">
+                            @{
+                                bool isAttending = false;
+                                foreach(var g in w.Guests)
+                                {
+                                    if(ViewBag.currentUser.ID == g.Guest.ID)
+                                    {
+                                        isAttending = true;
+                                    }
+                                }
+
+                                if(isAttending)
+                                {
+                                    <a class="col-3 text-decoration-none" href="/weddings/@w.ID/unrsvp">Un-RSVP</a>
+                                }
+                                else
+                                {
+                                    <a class="col-3 text-decoration-none" href="/weddings/@w.ID/rsvp">RSVP</a>
+                                }
+
+                                if(w.CreatedBy == ViewBag.currentUser.ID)
+                                {
+                                    <a class="col-3 text-danger text-decoration-none" href="/weddings/@w.ID/delete">Delete</a>
+                                }
+                            }
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

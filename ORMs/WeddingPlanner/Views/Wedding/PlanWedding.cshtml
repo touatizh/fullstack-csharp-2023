@@ -1,0 +1,32 @@
+@model Wedding
+
+<partial name="_Navbar" />
+
+<h3 class="mt-5">Plan a Wedding</h3>
+
+<form action="/weddings/plan/submit" method="post" class="d-flex flex-column w-50 mt-5">
+    <input type="hidden" asp-for="CreatedBy" value="@ViewBag.currentUser.ID"/>
+    <div class="d-flex align-items-center">
+        <label asp-for="WedderOne" class="col-4 form-label"></label>
+        <input asp-for="WedderOne" class="form-control">
+    </div>
+    <span asp-validation-for="WedderTwo" class="offset-4 text-danger mb-5"></span>
+    <div class="d-flex align-items-center">
+        <label asp-for="WedderTwo" class="col-4 form-label"></label>
+        <input asp-for="WedderTwo" class="form-control">
+    </div>
+    <span asp-validation-for="WedderTwo" class="offset-4 text-danger mb-5"></span>
+    <div class="d-flex align-items-center">
+        <label asp-for="Date" class="col-4 form-label"></label>
+        <input asp-for="Date" class="form-control" type="date">
+    </div>
+    <span asp-validation-for="Date" class="offset-4 text-danger mb-5"></span>
+    <div class="d-flex align-items-center">
+        <label asp-for="Address" class="col-4 form-label"></label>
+        <input asp-for="Address" class="form-control">
+    </div>
+    <span asp-validation-for="Address" class="offset-4 text-danger mb-5"></span>
+    <div>
+        <button class="btn btn-primary">Create</button>
+    </div>
+</form>

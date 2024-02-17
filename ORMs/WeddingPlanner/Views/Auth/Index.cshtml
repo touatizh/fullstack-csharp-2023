@@ -1,0 +1,44 @@
+@model User
+
+<div class="container d-flex justify-content-between mt-4">
+    <div class="col">
+        <h1 class="mb-5">Register</h1>
+        <form action="register/submit" method="post">
+            <div class="d-flex align-items-center gap-4 w-75">
+                <label asp-for="FirstName" class="col-4 form-label"></label>
+                <input asp-for="FirstName" class="form-control">
+            </div>
+            <span class="offset-3 ps-4 text-danger" asp-validation-for="FirstName"></span>
+
+            <div class="d-flex align-items-center gap-4 mt-3 w-75 w-75">
+                <label asp-for="LastName" class="col-4 form-label"></label>
+                <input asp-for="LastName" class="form-control">
+            </div>
+            <span class="offset-3 ps-4 text-danger" asp-validation-for="LastName"></span>
+
+            <div class="d-flex align-items-center gap-4 mt-3 w-75">
+                <label asp-for="Email" class="col-4 form-label"></label>
+                <input asp-for="Email" class="form-control">
+            </div>
+            <span class="offset-3 ps-4 text-danger" asp-validation-for="Email"></span>
+
+            <div class="d-flex align-items-center gap-4 mt-3 w-75">
+                <label asp-for="Password" class="col-4 form-label"></label>
+                <input asp-for="Password" class="form-control">
+            </div>
+            <span class="offset-3 ps-4 text-danger" asp-validation-for="Password"></span>
+
+            <div class="d-flex align-items-center gap-4 mt-3 w-75">
+                <label asp-for="ConfirmPwd" class="col-4 form-label"></label>
+                <input asp-for="ConfirmPwd" class="form-control">
+            </div>
+            <span class="offset-3 ps-4 text-danger text-wrap" asp-validation-for="ConfirmPwd"></span><br>
+
+            <button class="btn btn-primary mt-3">Register</button>
+        </form>
+    </div>
+    <div class=" col">
+        <h1 class="mb-5">Login</h1>
+        <partial name="_LoginPartial" />
+    </div>
+</div>

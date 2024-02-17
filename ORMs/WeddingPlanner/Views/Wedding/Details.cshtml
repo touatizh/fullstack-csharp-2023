@@ -1,0 +1,22 @@
+@model Wedding
+
+<partial name="_Navbar" />
+
+<h3 class="my-5">@Model.WedderOne & @Model.WedderTwo wedding</h3>
+<h5 class="mb-3">Date: @Model.Date.ToString("MMMM dd, yyyy")</h5>
+<h5 class="mb3">Guests:</h5>
+<div class="ms-3 p-3 border border-2 border-dark w-25">
+    @{
+        if(Model.Guests.Count == 0)
+        {
+            <p>No Guests :(</p>
+        }
+        else
+        {
+            foreach(var attendee in Model.Guests)
+            {
+                <p>@attendee.Guest.FirstName @attendee.Guest.LastName</p>
+            }
+        }
+    }
+</div>

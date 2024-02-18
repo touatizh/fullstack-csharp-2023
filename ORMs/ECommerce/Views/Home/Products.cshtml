@@ -1,0 +1,51 @@
+@model Product
+
+<div class="row gap-3 overflow-y-scroll" style="min-height: 90vh;">
+    <div class="col-3">
+        <div class="mt-5 mb-3 h4 text-decoration-underline">Add a new Product</div>
+        <form action="/products/add" method="post">
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label"></label>
+                <input class="form-control" asp-for="Name" />
+                <span class="form-text text-danger" asp-validation-for="Name"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ImageUrl" class="form-label"></label>
+                <input class="form-control" asp-for="ImageUrl" />
+                <span class="form-text text-danger" asp-validation-for="ImageUrl"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Quatity" class="form-label"></label>
+                <input class="form-control" asp-for="Quatity" />
+                <span class="form-text text-danger" asp-validation-for="Quatity"></span>
+            </div>
+            <button class="btn btn-primary">Create</button>
+        </form>
+    </div>
+
+    <div class="col mt-5">
+        <div class="row row-cols-1 row-cols-md-5 g-4 h-100">
+            @{
+                foreach (var p in ViewBag.AllProducts)
+                {
+                    <div class="col" style="height: 250px;Width: 160px;">
+                        <div class="card d-flex justify-content-center p-2 h-100">
+                            @if (p.ImageUrl == null)
+                            {
+                                <img class="card-img-top h-50" src="/img/noImageFound.png" alt="Product Image" />
+                            }
+                            else
+                            {
+                                <img class="card-img-top h-50" src="@p.ImageUrl" alt="Product Image" />
+                            }
+                            <div class="card-body d-flex flex-column justify-content-between">
+                                <h6 class="card-title text-center">@p.Name</h6>
+                                <p class="card-text text-center">@p.Quatity left</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
